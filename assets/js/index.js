@@ -49,5 +49,13 @@ function generateCssText() {
     bodyEl.style.cssText = `background:linear-gradient(${currentDirection},${aValue},${bValue})`;
 }
 
+// Function to copy the gradient Css
+(function () {
+    copy.addEventListener("click", () => {
+        // Copy the text area's value
+        navigator.clipboard.writeText(textArea.innerHTML)
+    })
+})();
+
 // Event listener for the "submit" button
 submit.addEventListener("click", generateCssText);
