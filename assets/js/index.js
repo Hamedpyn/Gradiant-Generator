@@ -1,3 +1,8 @@
+/**
+ * Project Name : Gradient Generator
+ * Date : 09 / 11 / 2023
+ * Developer : @HAMEDPYN
+ */
 
 // Select DOM Elements
 const bodyEl = document.querySelector('body');
