@@ -30,3 +30,7 @@ buttons.forEach(button => {
         currentDirection = btnDirection;
     });
 });
+
+
+// Event listener for the "submit" button
+submit.addEventListener("click", generateCssText);
