@@ -13,5 +13,16 @@ buttons.forEach(button => {
     button.addEventListener("click", (e) => {
         // Get the direction from the clicked button's data-direction attribute
         let btnDirection = e.target.dataset.direction;
+
+        // Remove the "active" class from the currently active button
+        document.querySelector("button.active").classList = "";
+
+        if (e.target.tagName == "BUTTON") {
+            // If the clicked element is a button, add the "active" class to it
+            e.target.classList.add("active");
+        } else {
+            // If the clicked element is not a button, add the "active" class to its parent element
+            e.target.parentElement.classList.add("active");
+        }
     });
 });
