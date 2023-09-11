@@ -7,6 +7,8 @@ const submit = document.querySelector('#submit');
 const copy = document.querySelector('#copy');
 const buttons = document.querySelectorAll('.buttons > button');
 const textArea = document.querySelector('#code');
+// current Direction for the gradient
+let currentDirection = "to bottom";
 
 // Event listener for buttons
 buttons.forEach(button => {
@@ -24,5 +26,7 @@ buttons.forEach(button => {
             // If the clicked element is not a button, add the "active" class to its parent element
             e.target.parentElement.classList.add("active");
         }
+        // Update the currentDirection variable with the selected direction
+        currentDirection = btnDirection;
     });
 });
