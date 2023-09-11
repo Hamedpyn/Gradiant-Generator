@@ -31,6 +31,12 @@ buttons.forEach(button => {
     });
 });
 
+// Function to generate CSS code and update elements
+function generateCssText() {
+    // Get the values of the color input fields
+    let aValue = colorA.value;
+    let bValue = colorB.value;
+}
 
 // Event listener for the "submit" button
 submit.addEventListener("click", generateCssText);
