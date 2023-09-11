@@ -36,6 +36,9 @@ function generateCssText() {
     // Get the values of the color input fields
     let aValue = colorA.value;
     let bValue = colorB.value;
+
+    // Update the text area with the generated CSS code
+    textArea.innerHTML = `background:linear-gradient(${currentDirection},${aValue},${bValue})`;
 }
 
 // Event listener for the "submit" button
