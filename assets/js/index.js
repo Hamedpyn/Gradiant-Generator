@@ -39,6 +39,9 @@ function generateCssText() {
 
     // Update the text area with the generated CSS code
     textArea.innerHTML = `background:linear-gradient(${currentDirection},${aValue},${bValue})`;
+
+    // Update the body element's CSS to apply the generated linear gradient background
+    bodyEl.style.cssText = `background:linear-gradient(${currentDirection},${aValue},${bValue})`;
 }
 
 // Event listener for the "submit" button
